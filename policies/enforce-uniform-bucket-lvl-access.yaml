@@ -5,7 +5,7 @@ metadata:
   namespace: policies
 spec:
   organizationRef:
-    external: "123456789012" # {"$kpt-set":"org-id"}
+    external: "123456789012" # kpt-set: ${org-id}
   constraint: "constraints/storage.uniformBucketLevelAccess"
   booleanPolicy:
     enforced: true
